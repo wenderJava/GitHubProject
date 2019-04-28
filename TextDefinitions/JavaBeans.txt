@@ -1,0 +1,37 @@
+Java Bean
+A Java Bean is a java class that should follow following conventions:
+
+It should have a no-arg constructor.
+It should be Serializable.
+It should provide methods to set and get the values of the properties, known as getter and setter methods.
+Why use Java Bean?
+According to Java white paper, it is a reusable software component. A bean encapsulates many objects into one object, so we can access this object from multiple places. Moreover, it provides the easy maintenance.
+======================
+public class Employee implements java.io.Serializable{  
+private int id;  
+private String name;  
+  
+public Employee(){}  
+  
+public void setId(int id){this.id=id;}  
+  
+public int getId(){return id;}  
+  
+public void setName(String name){this.name=name;}  
+  
+public String getName(){return name;}  
+  
+}  
+========================
+
+Advantages
+
+A Bean obtains all of the benefits of Java's "write once, run anywhere" paradigm.
+The properties, events, and methods of a Bean that are exposed to another application can be controlled.
+Auxiliary software can be provided to help configure a Bean.
+The configuration settings of a Bean can be saved in a persistent storage and can be restored at a later time.
+A Bean may register to receive events from other objects and can generate events that are sent to it.
+Disadvantages
+
+A class with a nullary constructor is subject to being instantiated in an invalid state. If such a class is instantiated manually by a developer (rather than automatically by some kind of framework), the developer might not realize that he has instantiated the class in an invalid state. The compiler can’t detect such a problem, and even if it’s documented, there’s no guarantee that the developer will see the documentation.
+Having to create a getter for every property and a setter for many, most, or all of them, creates an immense amount of boilerplate code.
