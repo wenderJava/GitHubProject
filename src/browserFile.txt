@@ -1,5 +1,2 @@
-file created in Browser for test
-
-and edited on [pc]
-
-this comment added on the pc
+https://github.com/ShadabFaiz/MySqlWorkbench
+  This project is about the creation of a web-based GUI for MySql database.
