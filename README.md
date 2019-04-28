@@ -11,3 +11,6 @@ Now, go to http://www.geeksforgeeks.org and check out how they solved the dynami
 
 Next, try out TopCoder tutorials. 
 Try solving similar DP problems from Sphere Online Judge (SPOJ), Programming Competition,Programming Contest,Online Computer Programming , HackerRank etc. competitive coding sites. Scourge Google for DP questions in interviews.
+
+
+https://www.quora.com/What-is-the-best-way-to-learn-dynamic-programming
