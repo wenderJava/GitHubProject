@@ -1,10 +1,11 @@
 public class TestFile {
 
     static int[] v = {0,1,0,0,1,1,1,0};
-
+    static int transfer;
+    static int i,j;
     public static void main(String[] args){
-        int i,j;
-        int transfer;
+
+
         boolean inversare = true;
 
         printArray(v);
@@ -13,11 +14,8 @@ public class TestFile {
             if(v[i]== v[i+1]){
                 for(j=i+1;j<v.length;j++){
                     if(v[j]!=v[i]){
-                        transfer = v[j];
-                        v[j] =v[j-1];
-                        v[j-1]= transfer;
+                        v=swapPlaces(v,j);
                         i=-1;
-                        System.out.println();
                         printArray(v);
                         break;
                     }
@@ -30,9 +28,17 @@ public class TestFile {
 
     }
 
+    public  static int[] swapPlaces(int[] v, int pos){
+
+        transfer = v[pos];
+        v[pos] =v[pos-1];
+        v[pos-1]= transfer;
+
+        return v;
+    }
 
     public static void printArray(int[] v){
-
+        System.out.println();
         for(int i =0; i<v.length;i++){
             System.out.print(v[i]+" ");
         }
