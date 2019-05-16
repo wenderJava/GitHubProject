@@ -1,3 +1,7 @@
+In Java, all errors and exceptions are represented with Throwable class. When an error occurs within a method, 
+the method creates an object (of any subtype of Throwable) and hands it off to the runtime system. 
+The object, called an exception object.
+
 Exceptions alter the program flow.
 
 
@@ -6,4 +10,15 @@ JAVA LANG OBJECT --> JAVA LANG THROWABLE --> JAVA LANG EXCEPTION --> JAVA LANG R
                                          
 ERROR = something went wrong and the program should not recover from this   
 
-RUNTIME EXCEPTION = also known as unexpected exceptions.
+RUNTIME EXCEPTION = also known as unexpected exceptions. Also known as UNCHECKED EXCEPTIONS,  the occurrences of which 
+        are not checked by the compiler.
+
+    A "checked exception" includes Exception and all subclases that do not extend RUNTIME EXCEPTION
+   
+    Checked exceptions are easy to ignore by rethrowing them as RuntimeException instances, so what's the point of having them?
+I've lost count of the number of times I've written this block of code:
+try {
+  // do stuff
+} catch (AnnoyingcheckedException e) {
+  throw new RuntimeException(e);
+}
