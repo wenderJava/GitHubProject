@@ -1,0 +1,9 @@
+Exceptions alter the program flow.
+
+
+JAVA LANG OBJECT --> JAVA LANG THROWABLE --> JAVA LANG EXCEPTION --> JAVA LANG RUNTIME EXCEPTION
+                                         --> JAVA LANG ERROR
+                                         
+ERROR = something went wrong and the program should not recover from this   
+
+RUNTIME EXCEPTION = also known as unexpected exceptions.
