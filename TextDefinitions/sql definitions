@@ -1,0 +1,5 @@
+CRUD is meant to define the characteristics necessary for a database as it relates to persistent storage. It is not meant to describe everything that could be done by a database engine.
+
+To make a comparison, fundamentally a vehicle is a device used for transport. While true, this definition certainly doesn't include all the detail entailed in a modern automobile.
+
+A database engine might handle multiple users, transactions, MVCC (Multiversion Concurrency Control), buffers and caches, ACID (atomicity, consistency, isolation, durability), as well as different isolation levels. A read may pull data from memory, remote databases, and multiple tables on disk processing it using SQL through multiple explicit and/or implicit code paths in order to present it to the requesting application. A create may allocate storage, provision structures, assign values, and do it's own processing before storing data. Etc.
